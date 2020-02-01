@@ -32,6 +32,7 @@ footer{
   }
   .boldf{
     font-weight: bold;
+    line-height:1.2em;
 }
 .lightf{
     font-weight: 300;
