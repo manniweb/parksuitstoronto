@@ -23,6 +23,7 @@ html, body {
 footer{
     width:100%;
 }
+
 * {
     box-sizing: border-box;
     
@@ -50,15 +51,17 @@ h1{
 
 .upperdd{
     width:100%;
-    height:auto;
-   margin-top:5px;
+    height:fit-content;
+   margin-top:0;
+ 
 }
 #hbar{
-    margin-left:40%;
+    margin-left:50%;
 
 display: flex;
 flex-wrap:wrap;
 height:auto;
+
 }
 
 #hbar > div{
@@ -71,21 +74,25 @@ flex:1;
 .ph2 {
    text-align:left;
    margin:auto 0;
+   display: flex;
 
 }
 .ph2 p a{
 color:black;
+padding-left:10px;
 }
 
 /* class for contact in hbar*/
 
 /* class for logo in hbar*/
 
-#hbar .lh1 img{
+ .lh1 img{
     height: 100px;
-    width:120px;
+    width:150px;
     z-index: 4;
-    
+    padding:0;
+    margin:0;
+    padding-left:10px;
 }
 
     /* class for social logos in hbar*/
@@ -122,10 +129,14 @@ flex-wrap: wrap;
 
                                               /*  nav bar*/
 #nav{
-  margin-top:5px;
+  
   position: relative;
   width:100%;
   display: flex;
+  padding:0;
+  padding:-10px 0 -10px 0;
+  background: rgba(224, 207, 202, 0.5);
+  margin-bottom:10px;
 }
                                       
 
@@ -135,13 +146,13 @@ flex-wrap: wrap;
     
 z-index:3;  
 margin:auto;
-margin-bottom:0;
+
 
 
 }
 #nav ul:hover{
    
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(224, 207, 202, 0.3);
 
 }
 
@@ -150,6 +161,7 @@ margin-bottom:0;
    
     
     padding:15px;
+    
 }
 .main-nav > li > a{
     padding:5px;
@@ -297,25 +309,47 @@ max-width:100%;
 
 height: auto; 
 }
+.header-h1{
+    position: absolute;
+    margin:auto;
+    z-index:39;
+    font-size: 1.3em;
+    font-family: Montserrat;
+    top:30%;
+    padding:5%;
+    width:70%;
+    text-align: justify;
+   
+    
+}
+.header-h1 h1{
+    background: rgba(224, 207, 202, 0.5);
+}
+.header-h1 p{
+    margin-top:10px;
+    
+}
                                          /*  slideshow*/
 .crossfade{
-    height:620px;
+    height:500px;
     width:100%;
     margin-bottom:-5px;
     z-index: 0;
+    
 }
 .crossfade > div {
     animation: imageAnimation 30s linear infinite 0s;
     backface-visibility: hidden;
-    background-size: cover;
-    background-position: center center;
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
     color: transparent;
     height: 100%;
-    left: 0px;
+    right: 0px;
     opacity: 0;
     position: absolute;
     top: 0px;
-    width: 100%;
+    width: 60%;
     
   }
   .crossfade > div:nth-child(1) { background-image: url('t1.jpg'); }
@@ -328,7 +362,7 @@ height: auto;
 
 .crossfade > div:nth-child(3) {
   animation-delay: 12s;
-  background-image: url('toronto.jpg');
+  background-image: url('bj10.jpg');
   z-index: 1;
 }
 
@@ -364,14 +398,14 @@ imageAnimation {  0% {
     height:100px;
     padding:5px;
     
-    background: black;
+    background: rgba(224, 207, 202, 0.5);
    
 
     z-index: 39;
 margin:auto;
 border-radius:10px;
 position: relative;
-margin-top: -30px;
+
 }
 
 .booking>h1{
@@ -397,6 +431,7 @@ margin-top: -30px;
 
 .mainintro{
     background-color:  rgb(238,238,238,0.9);
+    background: rgba(224, 207, 202, 0.5);
 }
 
 
@@ -410,7 +445,7 @@ background-repeat: no-repeat;
 background-attachment: fixed;
 background-size:60% 100%;
 background-position:  right;
-    
+    opacity:0.95;
 }
 .intro > h1{
 
@@ -419,9 +454,10 @@ margin-top:0.7%;
 padding:10px;
 
 font-family: 'Zhi Mang Xing', cursive;
-width:40%;
+width:60%;
 float: left;
 font-size: 3em;
+
 }
 .intro1{
  
@@ -437,95 +473,86 @@ font-size: 3em;
   
    padding:10px;
    position: absolute;
-color:white;
-background: rgba(0, 0, 0, 0.8);
+
+background-color: rgb(255,255,255,0.2);
 width:60%;
 margin-top: 20%;
 margin-left:5%;
 border:0.9px solid white;
 border-radius:15px;
 font-family: Montserrat;
+font-weight: 800;
 }
 
+                                 /* To do list */
 
 
 
 
-* {box-sizing: border-box}
-body {font-family: "Lato", sans-serif;}
+.todo{
+    width:90%;
+margin:auto;
+height:auto;
+margin:2% 0 2% 5%;
+border:1px solid rgb(255,255,255,0.5);
+border-radius:10px;
 
-/* Style the tab */
-.thingss{
-    
-    width:100%;
 }
-.tab {
-  float: left;
-  border: 1px solid #ccc;
-  background-color: white;
-  width: 30%;
-  height:450px;
-}
+.todo > h1{
+    font-size: 3em;
+    font-family: Montserrat;
 
-/* Style the buttons inside the tab */
-.tab button {
-  display: block;
-  background-color: inherit;
-  color: black;
-  padding: 22px 16px;
-  width: 100%;
-  border: none;
-  outline: none;
-  text-align: left;
-  cursor: pointer;
-  transition: 0.3s;
-  font-size: 17px;
 }
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
-}
-
-/* Create an active/current "tab button" class */
-.tab button.active {
-  background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-  float: left;
-  padding: 0px 12px;
-  border: 1px solid #ccc;
-  width: 70%;
-  border-left: none;
-  height:fit-content;
-  
-}
-.tabcontent .parts img{
-    height: 350px;
-    width: 300px;
-}
-.row {
-    display: -ms-flexbox; /* IE 10 */
+.todo-1{
     display: flex;
-    -ms-flex-wrap: wrap; /* IE 10 */
+    flex-flow: row-reverse wrap;
+    padding:20px;
+    
+}
+.todos{
+    flex:1;
+    width:200px;
+    height: 200px;
+    padding:50px;
+    margin:10px;
+    column-gap: 40px;
+
+}
+/* booking*/
+.row {
+    display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
   }
   
-  /* Create two equal columns that sits next to each other */
+  /* Create four equal columns that sits next to each other */
   .column {
-    -ms-flex: 50%; /* IE 10 */
-    flex: 50%;
+    flex: 25%;
+    max-width: 25%;
     padding: 0 4px;
   }
   
   .column img {
     margin-top: 8px;
     vertical-align: middle;
+    width: 100%;
   }
   
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
   /* Style the buttons */
  
   .reviewsection{
@@ -533,6 +560,7 @@ body {font-family: "Lato", sans-serif;}
     margin-left:10%;
     padding:20px;
     margin-top:5%;
+    background: rgba(224, 207, 202, 0.8);
     margin-bottom:5%
   }
   .r1{
