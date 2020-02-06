@@ -475,7 +475,9 @@ imageAnimation {  0% {
 
 
                                         .intro{
-    width:100%;
+    
+                                            width:100%;
+                                            background-image: url(mapw2.jpg);
 padding:10px;
 padding-top:0 ;
 margin:auto;
