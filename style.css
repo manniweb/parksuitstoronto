@@ -150,7 +150,7 @@ flex-wrap: wrap;
   display: flex;
   padding:0;
   padding:-10px 0 -10px 0;
-  background: rgba(224, 207, 202, 0.5);
+  background: rgba(224, 207, 202, 0.8);
   margin-bottom:10px;
 }
                                       
@@ -270,7 +270,7 @@ text-decoration: underline;
     display: flex;
     justify-content: center;
     align-items: center;
-  
+   
 }
 .btn1 {
     cursor: pointer;
@@ -281,6 +281,7 @@ text-decoration: underline;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     transition: all 1s;
+   
   }
   .btn1:after, .btn1:before {
     content: " ";
@@ -315,9 +316,9 @@ text-decoration: none;
     height: 100%;
   }
   
-  .bookbtn .btn1  > a{
+  .bookbtn .btn1   a{
 font-size: .5em !important;
-   
+font-family: Montserrat !important;
    
   }
 
@@ -568,20 +569,29 @@ background:url(t14.jpg);
     flex-wrap: wrap;
     position:absolute;
     top: 90px;
+
 }
 .loc1 > div{
-    height:400px;
-    width:300px;
+    height:fit-content;
+    width:400px;
     flex:1;
-    padding:10px;
     
+
+  
+  margin:0 50px 0 50px;
+  padding:10px 0 10px 0;
+    
+    
+    background-color: rgb(255,255,255,0.9);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 15px;
 }
 
 
 .loc1 .bluej img, .loc1 .fstreet img{
     height:380px;
     width:280px;
-    margin-left: 22%;
+    margin-left: 20%;
     
 }
 .loc1 .bluej h1, .loc1 .fstreet h1{
