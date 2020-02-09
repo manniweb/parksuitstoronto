@@ -628,7 +628,7 @@ background:url(t14.jpg);
                                 }
 
 
-.todo, .servvi, .room1 {
+.todo, .servvi {
     width:90%;
 margin:auto;
 height:fit-content;
@@ -638,18 +638,18 @@ border-radius:10px;
 background: rgba(224, 207, 202, 0.5);
 
 }
-.todo,.servvi,.room1 > h1{
+.todo,.servvi> h1{
     
     font-family: Montserrat;
 
 }
-.todo-1,.serv-1, .room1-1{
+.todo-1,.serv-1{
     display: flex;
     flex-flow: row-reverse wrap;
     padding:20px;
     
 }
-.todos,.room1-1>div{
+.todos{
     flex:1;
     width:180px;
     height: 420px;
@@ -1014,7 +1014,7 @@ margin-left:27%;
 
     width:100%;
     height:200px;
-    background: rgba(224, 207, 202, 0.5);
+    background: rgba(224, 207, 202, 0.8);
     position: relative;
     margin:2% 0;
 }
@@ -1069,9 +1069,15 @@ padding:20px;
 }
 .blue-include{
     height:fit-content;
-    margin:4% 0;
-    width:100%;
-    
+    margin:4% 0.5%;
+    width:99%;
+   background-color:  rgba(255, 255, 255, 0.3);
+   border-top:3px solid rgba(224, 207, 202);
+border-bottom:3px solid rgba(224, 207, 202);
+border-radius:10px;
+}
+.blue-include h1{
+    padding:10px;
 }
 .blue-include .line{
     width:20%;
@@ -1079,14 +1085,16 @@ padding:20px;
 }
 .blue-include ul{
     display:flex;
-    width:90%;
-    margin:5% 5%;
+    flex-wrap: wrap;
+    width:100%;
+    margin:5% 0;
 
 }
 .blue-include ul li{
     flex:1;
-  
-    border:1px solid red;
+   
+    padding:5px;
+    
 }
 .blue-include ul li img{
     height:40px;
@@ -1095,9 +1103,58 @@ padding:20px;
     margin-left: 40%;
 }
 .blue-include ul li h2{
+    font-size: 1.15em;
+}
+.room1{
+    width:90%;
+    margin:2% 5%;
+    height:fit-content;
+    padding:2% 0;
+
+}
+.room1-1{
+    display: grid;
     
+    background-color: rgb(251,250,248);
+    height:500px;
+}
+.room1-1 > div{
+    grid-row: 1;
+width:360px;
+height:400px;
+background-color: rgb(255,255,255,0.9);
+margin:5% 15%;
+border:1px solid #dddddd;
 }
 .room1-1>div img{
-    height:350px;
-width:500px;
+    height:370px;
+width:360px;
+
+}
+.room1-1>div .btn1{
+    font-size: 2em;
+    border-bottom-left-radius: 0;
+    border:1px;
+}
+
+.policy,.additionalpolicy{
+    height: fit-content;
+    line-height: 2em;
+}
+.policy-1, .additionalpolicy-1{
+    width:80%;
+    margin:5% 10%;
+}
+.policy-1 ul,.additionalpolicy ul{
+    list-style-type: circle;
+}
+.policy-1 ul li , .additionalpolicy ul li{
+    font-size: 1.3em;
+}
+.policy-1 h1.additionalpolicy-1 h1{
+    margin:5% 0;
+}
+.additionalpolicy-1 p{
+    font-size: 1.3em;
+    margin: 10px 0;
 }
