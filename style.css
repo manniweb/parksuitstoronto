@@ -33,6 +33,7 @@ div{
   margin:0;
   padding:0;
     text-decoration: none;
+    line-height: 1.1em;
   }
   a{
       text-decoration: none;
@@ -62,6 +63,17 @@ h2{
     text-shadow: black 0.5px 0.5px;
 
 } 
+.horiline{
+    border-left:1px solid black;
+    width:100%;
+    height:50px;
+    margin-left:49%;
+    overflow: hidden;
+
+}
+.horiline::after{
+    
+}
 }
 .upperdd{
     width:100%;
@@ -564,7 +576,7 @@ background:url(t14.jpg);
     width:90%;
     
     margin:auto;
-    margin-left:5%;
+    margin-left:8%;
     display: flex;
     flex-wrap: wrap;
     position:absolute;
@@ -573,32 +585,38 @@ background:url(t14.jpg);
 }
 .loc1 > div{
     height:fit-content;
-    width:400px;
+    width:280px;
     flex:1;
     
 
   
-  margin:0 90px 0 90px;
-  padding:10px 0 10px 0;
+  margin:0 183px 0 100px;
+  padding:0;
     
     
     background-color: rgb(255,255,255,0.9);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
     margin-bottom: 15px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
 }
-
+.loc1 > div:hover{
+    scale: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+}
 
 .loc1 .bluej img, .loc1 .fstreet img{
     height:380px;
     width:280px;
-    margin-left: 12%;
+    
     border-top-left-radius:10px;
     border-top-right-radius:10px;
     
 }
+
 .loc1 .bluej h1, .loc1 .fstreet h1{
     font-size: 1.4em;
-    width:70%;
+    width:100%;
     margin:auto;
 }
 
@@ -618,7 +636,10 @@ background:url(t14.jpg);
 
 }
                                  
-
+.servvi .horiline{
+    margin-top:3%;
+    margin-bottom:2%;
+}
                                  
 
 .servs img{
@@ -641,6 +662,7 @@ background: rgba(224, 207, 202, 0.5);
 .todo,.servvi> h1{
     
     font-family: Montserrat;
+  
 
 }
 .todo-1,.serv-1{
